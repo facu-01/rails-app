@@ -1,0 +1,53 @@
+### list all
+// @no-log
+GET http://localhost:3000/companies
+Accept: application/json
+
+### show one
+// @no-log
+GET http://localhost:3000/companies/1
+Accept: application/json
+
+### create
+// @no-log
+POST http://localhost:3000/companies
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "8"
+}
+
+### destroy
+// @no-log
+DELETE http://localhost:3000/companies/2
+Content-Type: application/json
+Accept: application/json
+
+### update
+// @no-log
+PATCH http://localhost:3000/companies/2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Funcionó papa"
+}
+
+
+### list works
+// @no-log
+GET http://localhost:3000/companies/1/works
+Accept: application/json
+
+### create work
+// @no-log
+POST http://localhost:3000/companies/2/works
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "test",
+  "desc": "2"
+}
+

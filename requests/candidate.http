@@ -1,0 +1,24 @@
+### list all candidates
+// @no-log
+GET http://localhost:3000/candidates
+
+
+### create
+// @no-log
+POST http://localhost:3000/candidates
+Content-Type: application/json
+
+{
+  "name": "facu 2"
+}
+
+### aplicate
+// @no-log
+
+POST http://localhost:3000/works/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "test": 0
+}
